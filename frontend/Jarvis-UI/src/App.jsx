@@ -24,10 +24,18 @@ function App() {
         return;
       }
 
-      const res = await axios.post("http://127.0.0.1:8000/ask", {
-        prompt: promptToSend,
+      // For Local Machine
+      // const res = await axios.post("http://127.0.0.1:8000/ask", {
+      //   prompt: promptToSend,
+      // });
+
+
+      // For deployed Machine
+      axios.post("https://voicegpt-ai-voice-assistant.onrender.com/ask", {
+          prompt: promptToSend,
       });
 
+      
       setResponse(res.data.response);
       speak(res.data.response);
 
