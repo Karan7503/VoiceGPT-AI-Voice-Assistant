@@ -31,11 +31,11 @@ function App() {
 
 
       // For deployed Machine
-      axios.post("https://voicegpt-ai-voice-assistant.onrender.com/ask", {
+      const res = await axios.post("https://voicegpt-ai-voice-assistant.onrender.com/ask", {
           prompt: promptToSend,
       });
 
-      
+
       setResponse(res.data.response);
       speak(res.data.response);
 
