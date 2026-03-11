@@ -2,6 +2,19 @@
 
 VoiceGPT is a voice-enabled AI assistant that allows users to interact with a large language model using both text and speech.
 
+## 🚀 Live Demo
+
+Frontend (App):
+https://voicegpt-ai-voice-assistant.netlify.app
+
+Backend API:
+https://voicegpt-ai-voice-assistant.onrender.com
+
+API Docs (Swagger):
+https://voicegpt-ai-voice-assistant.onrender.com/docs
+
+## Works on Chrome Browser
+
 ## Features
 
 - Voice input using Speech Recognition
